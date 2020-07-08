@@ -1,4 +1,6 @@
-%{"dbus": {:git, "https://github.com/slashmili/erlang-dbus.git", "6998ebd8236dcbf9b8a8ca7df83595d448e403bb", [branch: "unix-socket"]},
-  "dialyxir": {:hex, :dialyxir, "0.3.5", "eaba092549e044c76f83165978979f60110dc58dd5b92fd952bf2312f64e9b14", [:mix], []},
-  "earmark": {:hex, :earmark, "1.0.2", "a0b0904d74ecc14da8bd2e6e0248e1a409a2bc91aade75fcf428125603de3853", [:mix], []},
-  "ex_doc": {:hex, :ex_doc, "0.14.2", "c89d60db464e8a0849a35dbcd6eed71f2b076c339d0b05b3bb5c90d6bab31e4f", [:mix], [{:earmark, "~> 1.0", [hex: :earmark, optional: false]}]}}
+%{
+  "dbus": {:hex, :dbus, "0.7.0", "71b7660523be6e222a8a4f9ddcbf54ad95638479bd17654975bb751aadbe81de", [:make, :rebar3], [], "hexpm", "b4c84734c34876cfd0dd831742f198c313ea901dd673f311db1afb244145077d"},
+  "dialyxir": {:hex, :dialyxir, "0.3.5", "eaba092549e044c76f83165978979f60110dc58dd5b92fd952bf2312f64e9b14", [:mix], [], "hexpm", "61e0fb45140079a2d40b4db617b3431dc9bb29dca7e5039d271eeaca733ed0c3"},
+  "earmark": {:hex, :earmark, "1.0.2", "a0b0904d74ecc14da8bd2e6e0248e1a409a2bc91aade75fcf428125603de3853", [:mix], [], "hexpm", "e2d24ab54061603b8dd65bc3d361897ded61f33a4b57044564320a3ac00e8e72"},
+  "ex_doc": {:hex, :ex_doc, "0.14.2", "c89d60db464e8a0849a35dbcd6eed71f2b076c339d0b05b3bb5c90d6bab31e4f", [:mix], [{:earmark, "~> 1.0", [hex: :earmark, repo: "hexpm", optional: false]}], "hexpm", "1f8c8b0ebcf9fb72827a836fd866cfad3603f5c9176c8d1be11e39d2630454cb"},
+}
