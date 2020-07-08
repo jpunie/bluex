@@ -1,5 +1,5 @@
 defmodule Bluex.Device do
-  defstruct mac_address: nil, manufacturer_data: nil, rssi: nil, uuids: nil, adapter: nil, options: []
+  defstruct name: nil, mac_address: nil, manufacturer_data: nil, rssi: nil, uuids: nil, adapter: nil, service_data: nil, options: []
 
   @callback device_connected(%Bluex.Device{}, any) :: any
   @doc """

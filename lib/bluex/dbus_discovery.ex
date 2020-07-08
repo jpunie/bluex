@@ -123,11 +123,13 @@ defmodule Bluex.DBusDiscovery do
       case args do
         {_interface_bluez_path, %{@device_dbus_name => device_details}} ->
           device = %Bluex.Device{}
+                   |> Map.put(:name, Map.get(device_details, "Name", nil))
                    |> Map.put(:mac_address, device_details["Address"])
                    |> Map.put(:manufacturer_data, device_details["ManufacturerData"])
                    |> Map.put(:rssi, device_details["RSSI"])
                    |> Map.put(:uuids, device_details["UUIDs"])
                    |> Map.put(:adapter, Path.basename(device_details["Adapter"]))
+                   |> Map.put(:service_data, Map.get(device_details, "ServiceData", nil))
           Bluex.DBusDiscovery.device_found(pid, device)
         _ -> :ok
       end
